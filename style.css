@@ -1,0 +1,402 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+}
+
+.logo {
+  max-width: 200px;
+  width: 100%;
+}
+
+.video-slider .video {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.services{
+    padding: 2rem 1rem;
+  background-color: #111;
+}
+.location, .contact {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.services h2{
+    color: gold;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.location h2, .contact h2 {
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 0.5rem 0;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.contact a {
+  color: gold;
+  text-decoration: none;
+}
+
+.contact i {
+  margin-right: 8px;
+}
+
+.footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.reserve-btn {
+  background-color: gold;
+  color: black;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #e6c200;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .services ul {
+    font-size: 0.95rem;
+  }
+  iframe {
+    height: 200px;
+  }
+  .header-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .reserve-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.video-slider {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  align-items: center; /* Already centers content horizontally */
+  text-align: center;
+}
+
+.hero-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: gold;
+}
+
+.hero-btn {
+  background-color: gold;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+   display: inline-block;
+  text-align: center;
+}
+
+.hero-btn:hover {
+  background-color: #e6c200;
+}
+
+@media (max-width: 600px) {
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+    
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+  .hero-btn {
+    width: auto;              /* Prevent full width */
+    max-width: 90%;
+    margin: 0 auto; 
+  }
+}
+
+/* Menu grid layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Individual menu item design */
+.menu-item {
+  background: #222;
+  border: 1px solid gold;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+}
+
+
+.map-link {
+    color: rgb(206, 202, 175);
+  text-decoration: none;
+}
+
+
+.gallery {
+  padding: 2rem 1rem;
+  background-color: #000;
+  text-align: center;
+}
+
+.gallery h2 {
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  gap: 1rem;
+  animation: slideGallery 20s linear infinite;
+}
+
+.slider-track img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.slider-track img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slideGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 600px) {
+  .slider-track img {
+    max-width: 250px;
+  }
+}
+
+
+.booking {
+  padding: 2rem 1rem;
+  background-color: #111;
+  text-align: center;
+}
+
+.booking h2 {
+  color: gold;
+  margin-bottom: 1rem;
+}
+
+.booking form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.booking label {
+  color: #fff;
+  text-align: left;
+}
+
+.booking select,
+.booking input,
+.booking button {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+.booking select,
+.booking input {
+  background: #222;
+  color: #fff;
+}
+
+.booking button {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.booking button:hover {
+  background-color: #e6c200;
+}
+
+.barber-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.barber-card {
+  background-color: #222;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  width: 100px;
+}
+
+.barber-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.barber-card input[type="radio"] {
+  display: none;
+}
+
+.barber-card input[type="radio"]:checked + img {
+  outline: 2px solid gold;
+  outline-offset: 4px;
+}
+
+.barber-card span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.barber-card:hover {
+  transform: scale(1.05);
+  border-color: gold;
+}
+
+@media (max-width: 600px) {
+  .barber-card {
+    width: 80px;
+  }
+
+  .barber-card img {
+    height: 80px;
+  }
+   .header {
+    padding: 0.5rem; /* Réduction du padding */
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 0.5rem; /* Réduction de l'espacement */
+    padding: 0.5rem;
+  }
+
+  
+}
+
+
+.video-slider .video {
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .hero-overlay {
+    padding: 1rem;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.2rem;
+  }

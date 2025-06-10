@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixo VIP Barber Shop</title>
+   <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+ <header class="header">
+  <div class="header-content">
+    <img src="assets/logo.png" alt="Pixo VIP Logo" class="logo" />
+   
+  </div>
+</header>
+
+
+  <!-- Video Slider -->
+  <section class="video-slider">
+  <video src="assets/video0.mp4" autoplay muted loop class="video" id="sliderVideo"></video>
+  <div class="hero-overlay">
+    <h1>Bienvenue chez Pixo VIP</h1>
+    <a 
+  href="#booking" 
+  class="hero-btn" 
+  
+>
+  Réserver Maintenant
+</a>
+
+
+  </div>
+</section>
+
+<!-- Booking Form -->
+<section class="booking" id="booking">
+  <h2>Réserver un Rendez-vous</h2>
+  <form id="bookingForm" onsubmit="sendWhatsApp(); return false;">
+    <label for="name">Votre nom :</label>
+    <input type="text" id="name" placeholder="Ex: Yassine" required>
+
+<label for="barber">Choisissez le coiffeur :</label>
+<div class="barber-options">
+  <label class="barber-card">
+    <input type="radio" name="barber" value="Anas" required />
+    <img src="assets/coif1.jpeg" alt="Coiffeur Anas">
+    <span>Anas</span>
+  </label>
+
+  <label class="barber-card">
+    <input type="radio" name="barber" value="Yassine" required />
+    <img src="assets/coif2.jpeg" alt="Coiffeur Yassine">
+    <span>Yassine</span>
+  </label>
+
+  <label class="barber-card">
+    <input type="radio" name="barber" value="Disponible" required />
+    <img src="assets/coif3.jpeg" alt="Disponible">
+    <span>Anas pixo</span>
+  </label>
+</div>
+
+    <label for="service">Choisissez un service :</label>
+    <select id="service" required>
+      <option value="">-- Sélectionner --</option>
+      <option>Coupe - 40 DHS</option>
+      <option>Coupe + Barbe - 50 DHS</option>
+      <option>Pack Complet - 70 DHS</option>
+      <option>Coupe Enfant - 30 DHS</option>
+      <option>Breshing - 20 DHS</option>
+      <option>Gommage - 10 DHS</option>
+      <option>Soin Protéine - dès 300 DHS</option>
+      <option>Soin Visage - 100 DHS</option>
+      <option>Coloration Cheveux - dès 200 DHS</option>
+      <option>Coloration Barbe - 50 DHS</option>
+      <option>Contours - 10 DHS</option>
+      
+    </select>
+
+    <label for="date">Choisissez la date :</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Choisissez l'heure :</label>
+    <input type="time" id="time" required>
+
+    <button type="submit" class="hero-btn">Confirmer via WhatsApp</button>
+  </form>
+</section>
+
+
+  <!-- Services -->
+  <section class="services">
+  <h2>Nos Services</h2>
+  <div class="menu-grid">
+    <div class="menu-item">Coupe - 40 DHS</div>
+    <div class="menu-item">Coupe + Barbe - 50 DHS</div>
+    <div class="menu-item">Pack Complet - 70 DHS</div>
+    <div class="menu-item">Coupe Enfant - 30 DHS</div>
+    <div class="menu-item">Breshing - 20 DHS</div>
+    <div class="menu-item">Gommage - 10 DHS</div>
+    <div class="menu-item">Soin Protéine - dès 300 DHS</div>
+    <div class="menu-item">Soin Visage - 100 DHS</div>
+    <div class="menu-item">Coloration Cheveux - dès 200 DHS</div>
+    <div class="menu-item">Coloration Barbe - 50 DHS</div>
+    <div class="menu-item">Contours - 10 DHS</div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery">
+  <h2>Galerie</h2>
+  <div class="slider-container">
+    <div class="slider-track" id="sliderTrack">
+      <img src="assets/gallery0.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery1.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery2.jpeg" alt="Gallery Photo 2">
+      <img src="assets/gallery3.jpeg" alt="Gallery Photo 3">
+      <img src="assets/gallery4.jpeg" alt="Gallery Photo 4">
+      <img src="assets/gallery5.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery6.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery7.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery8.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery9.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery10.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery11.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery12.jpeg" alt="Gallery Photo 1">
+      <img src="assets/gallery13.jpeg" alt="Gallery Photo 1">
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Location -->
+  <section class="location">
+  <h2>Nous Trouver</h2>
+  <a href="https://urlgeni.us/Mapmap" target="_blank" class="map-link">📍 Localisation</a>
+  <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2419.104748547626!2d-7.503887924303213!3d33.59065997333432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDM1JzI2LjQiTiA3wrAzMCcwNC43Ilc!5e1!3m2!1sfr!2sma!4v1749138328152!5m2!1sfr!2sma" 
+      allowfullscreen 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</section>
+
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/212620480920">+212 6 20 48 09 20</a></p>
+    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/pixoanas_">@pixoanas_</a></p>
+    <p><i class="fab fa-facebook"></i> <a href="https://web.facebook.com/pixoanastv">Facebook</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Pixo VIP Barber Shop - Since 2022</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
