@@ -381,7 +381,7 @@ iframe {
   .header-content {
     flex-direction: column;
     gap: 0.5rem; /* Réduction de l'espacement */
-    padding: 0.5rem;
+    padding: 0rem;
   }
 .video-slider .video {
   max-height: 250px;
