@@ -384,7 +384,7 @@ iframe {
     padding: 0.5rem;
   }
 .video-slider .video {
-  
+  max-height: 250px;
   height: auto;
 }
 
@@ -410,7 +410,7 @@ iframe {
   }
 
 
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
   .header {
     padding-top: 0rem;
     padding-bottom: 0rem;
@@ -428,4 +428,3 @@ iframe {
     height: auto;
   }
 }
-
