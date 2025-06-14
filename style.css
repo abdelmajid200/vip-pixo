@@ -383,15 +383,23 @@ iframe {
     gap: 0.5rem; /* Réduction de l'espacement */
     padding: 0.5rem;
   }
+.video-slider .video {
+  max-height: 250px;
+  height: auto;
+}
 
   
 }
 
 
 .video-slider .video {
-    max-height: 250px;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
 
   .hero-overlay {
     padding: 1rem;
